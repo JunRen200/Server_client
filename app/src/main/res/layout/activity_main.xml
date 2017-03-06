@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="comqq.example.asus_pc.server_client.MainActivity">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入姓名 " />
+
+    <EditText
+        android:id="@+id/edt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入地址" />
+
+    <EditText
+        android:id="@+id/edt_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入年龄"
+        android:inputType="number" />
+    <!--  <RadioGroup
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/edt_sex"
+          android:orientation="horizontal">
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:text="男"/>
+          <RadioButton
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="女"/>
+      </RadioGroup>-->
+    <Button
+        android:id="@+id/bnt_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="提交" />
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询全部数据" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>
